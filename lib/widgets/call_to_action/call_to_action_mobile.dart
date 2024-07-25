@@ -7,7 +7,7 @@ class CallToActionMobile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  Container(
+    return Container(
       height: 60,
       alignment: Alignment.center,
       child: Text(
