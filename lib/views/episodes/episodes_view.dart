@@ -58,11 +58,25 @@ class _EpisodesViewState extends State<EpisodesView> {
                   SizedBox(width: 20), // Add space between button and text
                   Expanded(
                     flex: 3,
-                    child: Text(
-                      _selectedCourse == 'Course 1'
-                          ? 'This is Course 1. Learn the basics of programming.'
-                          : '',
-                      style: TextStyle(fontSize: 18),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          _selectedCourse == 'Course 1'
+                              ? 'This is Course 1. Learn the basics of programming.'
+                              : '',
+                          style: TextStyle(fontSize: 18),
+                        ),
+                        _selectedCourse == 'Course 1'
+                            ? ElevatedButton(
+                                onPressed: () {
+                                  // Add enroll button press handler
+                                  print('Enrolled in Course 1');
+                                },
+                                child: Text('Enroll'),
+                              )
+                            : Container(),
+                      ],
                     ),
                   ),
                 ],
@@ -91,11 +105,25 @@ class _EpisodesViewState extends State<EpisodesView> {
                   SizedBox(width: 20), // Add space between button and text
                   Expanded(
                     flex: 3,
-                    child: Text(
-                      _selectedCourse == 'Course 2'
-                          ? 'This is Course 2. Learn advanced programming concepts.'
-                          : '',
-                      style: TextStyle(fontSize: 18),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          _selectedCourse == 'Course 2'
+                              ? 'This is Course 2. Learn advanced programming concepts.'
+                              : '',
+                          style: TextStyle(fontSize: 18),
+                        ),
+                        _selectedCourse == 'Course 2'
+                            ? ElevatedButton(
+                                onPressed: () {
+                                  // Add enroll button press handler
+                                  print('Enrolled in Course 2');
+                                },
+                                child: Text('Enroll'),
+                              )
+                            : Container(),
+                      ],
                     ),
                   ),
                 ],
@@ -124,11 +152,25 @@ class _EpisodesViewState extends State<EpisodesView> {
                   SizedBox(width: 20), // Add space between button and text
                   Expanded(
                     flex: 3,
-                    child: Text(
-                      _selectedCourse == 'Course 3'
-                          ? 'This is Course 3. Learn specialized programming skills.'
-                          : '',
-                      style: TextStyle(fontSize: 18),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          _selectedCourse == 'Course 3'
+                              ? 'This is Course 3. Learn specialized programming skills.'
+                              : '',
+                          style: TextStyle(fontSize: 18),
+                        ),
+                        _selectedCourse == 'Course 3'
+                            ? ElevatedButton(
+                                onPressed: () {
+                                  // Add enroll button press handler
+                                  print('Enrolled in Course 3');
+                                },
+                                child: Text('Enroll'),
+                              )
+                            : Container(),
+                      ],
                     ),
                   ),
                 ],
